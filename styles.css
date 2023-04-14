@@ -6,3 +6,33 @@
 h2 {
     margin-top: 3em;
 }
+
+table {
+    margin: auto; /* Centre tables */
+    margin-top: 2em;
+}
+
+table,
+th,
+td {
+    border: 2px solid darkgray;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 1em 0.8em;
+}
+
+th {
+    background-color: dodgerblue;
+    border: 2px solid dodgerblue;
+    border-bottom: 2px solid darkgray;
+    color: azure;
+    font-size: 1.2em;
+}
+
+table.reference th:nth-child(3),
+table.reference td:nth-child(3) {
+    text-align: left; /* 3rd column (description) in reference tables */
+}
