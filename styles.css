@@ -36,3 +36,11 @@ table.reference th:nth-child(3),
 table.reference td:nth-child(3) {
     text-align: left; /* 3rd column (description) in reference tables */
 }
+
+.code {
+    padding: 0.2em;
+    background-color: rgb(230, 240, 255);
+    font-family: Courier, monospace;
+    font-size: 0.9em;
+    font-weight: bold;
+}
