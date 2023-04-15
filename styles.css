@@ -7,8 +7,9 @@ h2 {
     margin-top: 3em;
 }
 
+pre,
 table {
-    margin: auto; /* Centre tables */
+    margin: auto; /* Centre tables and code snippets */
     margin-top: 2em;
 }
 
@@ -43,4 +44,13 @@ table.reference td:nth-child(3) {
     font-family: Courier, monospace;
     font-size: 0.9em;
     font-weight: bold;
+}
+
+pre.code {
+    display: inline-block;
+    min-width: 40%;
+    overflow: scroll;
+    padding: 1em;
+    border: 1px solid darkgray;
+    text-align: left;
 }
