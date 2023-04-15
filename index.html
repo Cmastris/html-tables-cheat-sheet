@@ -154,7 +154,113 @@
     </section>
     <section>
       <h2>Complex Example</h2>
-      <p>Lorem ipsum</p>
+      <p>
+        The example table below includes <span class="code">&lt;caption&gt;</span>, <span class="code">&lt;tfoot&gt;</span>, 
+        <span class="code">colspan</span>, and <span class="code">scope</span>.
+      </p>
+      <code>
+        <pre class="code">
+&lt;table&gt;
+  &lt;caption&gt;London Weather in Spring&lt;/caption&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th colspan="2" scope="colgroup"&gt;Temperature&lt;/td&gt;
+      &lt;th colspan="2" scope="colgroup"&gt;Rainfall&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th scope="col"&gt;Month&lt;/th&gt;
+      &lt;th scope="col"&gt;Low Temp. (&deg;C)&lt;/th&gt;
+      &lt;th scope="col"&gt;High Temp. (&deg;C)&lt;/th&gt;
+      &lt;th scope="col"&gt;Rainfall (mm)&lt;/th&gt;
+      &lt;th scope="col"&gt;Rainfall &ge;1 mm (days)&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+        &lt;th scope="row"&gt;April&lt;/th&gt;
+        &lt;td&gt;7&lt;/td&gt;
+        &lt;td&gt;15&lt;/td&gt;
+        &lt;td&gt;42&lt;/td&gt;
+        &lt;td&gt;8.8&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th scope="row"&gt;May&lt;/th&gt;
+      &lt;td&gt;10&lt;/td&gt;
+      &lt;td&gt;18&lt;/td&gt;
+      &lt;td&gt;45&lt;/td&gt;
+      &lt;td&gt;8.0&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th scope="row"&gt;June&lt;/th&gt;
+      &lt;td&gt;13&lt;/td&gt;
+      &lt;td&gt;21&lt;/td&gt;
+      &lt;td&gt;47&lt;/td&gt;
+      &lt;td&gt;8.3&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tfoot&gt;
+    &lt;tr&gt;
+      &lt;th scope="row"&gt;Average&lt;/th&gt;
+      &lt;td&gt;10&lt;/td&gt;
+      &lt;td&gt;18&lt;/td&gt;
+      &lt;td&gt;45&lt;/td&gt;
+      &lt;td&gt;8.4&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tfoot&gt;
+&lt;/table&gt;
+        </pre>
+      </code>
+      <!-- Complex table snippet as HTML -->
+      <table>
+        <caption>London Weather in Spring</caption>
+        <thead>
+          <tr>
+            <th></th>
+            <th colspan="2" scope="colgroup">Temperature</td>
+            <th colspan="2" scope="colgroup">Rainfall</td>
+          </tr>
+          <tr>
+            <th scope="col">Month</th>
+            <th scope="col">Low Temp. (&deg;C)</th>
+            <th scope="col">High Temp. (&deg;C)</th>
+            <th scope="col">Rainfall (mm)</th>
+            <th scope="col">Rainfall &ge;1 mm (days)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+              <th scope="row">April</th>
+              <td>7</td>
+              <td>15</td>
+              <td>42</td>
+              <td>8.8</td>
+            </tr>
+          <tr>
+            <th scope="row">May</th>
+            <td>10</td>
+            <td>18</td>
+            <td>45</td>
+            <td>8.0</td>
+          </tr>
+          <tr>
+            <th scope="row">June</th>
+            <td>13</td>
+            <td>21</td>
+            <td>47</td>
+            <td>8.3</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th scope="row">Average</th>
+            <td>10</td>
+            <td>18</td>
+            <td>45</td>
+            <td>8.4</td>
+          </tr>
+        </tfoot>
+      </table>
     </section>
   </main>
 </body>
