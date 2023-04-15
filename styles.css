@@ -66,7 +66,7 @@ tfoot {
 pre.code {
     display: inline-block;
     min-width: 50%;
-    overflow: scroll;
+    overflow: auto;
     padding: 1em;
     border: 1px solid darkgray;
     text-align: left;
