@@ -5,6 +5,10 @@
     text-align: center;
 }
 
+main {
+    margin-bottom: 4em;
+}
+
 h2 {
     margin-top: 3em;
 }
